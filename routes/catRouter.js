@@ -26,7 +26,6 @@ catRouter
     
   })
   .post(cors.corsWithOptions,auth.verifyUser,auth.verifyAdmin,  (req, res, next) => {
-   
     if(!req.body.user){
      req.body.user = req.user._id;
     }
