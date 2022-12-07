@@ -5,7 +5,6 @@ var catSchema = new Schema(
   {
     assetType: {
       type: String,
-      required: true,
     },
     catagoryName: {
       type: String,

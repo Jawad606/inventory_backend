@@ -32,6 +32,7 @@ catRouter
     else{
       req.body.user = mongoose.Types.ObjectId(req.body.user);
     }
+
     catagory.create(req.body).then((cat) => {
       res.statusCode = 200;
       res.setHeader("Content-Type", "application/json");

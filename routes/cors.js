@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-const whitelist = ['http://localhost:3000','http://localhost:3001','https://jawad606.github.io','https://comsats-inventory-system.herokuapp.com'];
+const whitelist = ['http://localhost:3000','http://localhost:3001','https://jawad606.github.io','https://comsats-inventory-system.herokuapp.com','https://client-omega-sandy.vercel.app'];
 var corsOptionsDelegate = (req, callback) => {
     var corsOptions;
     console.log(req.header('Origin'));
