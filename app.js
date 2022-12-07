@@ -19,22 +19,6 @@ const payment = require("./models/payment");
 
 const mongoose = require("mongoose");
 const url = config.mongoUrl;
-// const connectDatabase = async () => {
-//   try {
-//     await mongoose.connect("mongodb+srv://jawadmirza606:dvs3jvEEf6owaXnd@cluster0.utsph.mongodb.net/?retryWrites=true&w=majority");
-
-//     console.log("connected to database");
-//   } catch (error) {
-//     console.log(error);
-//     process.exit(1);
-//   }
-// };
-// // jawadmirza606
-// // dvs3jvEEf6owaXnd
-// connectDatabase();
-
-// aRlURY3vRj9NrHz4
-
 console.log(url)
 const connect =  mongoose.connect('mongodb://jawadmirza606:aRlURY3vRj9NrHz4@university-shard-00-00.vnke6.mongodb.net:27017,university-shard-00-01.vnke6.mongodb.net:27017,university-shard-00-02.vnke6.mongodb.net:27017/?ssl=true&replicaSet=atlas-tkd3ii-shard-0&authSource=admin&retryWrites=true&w=majority');
 // const connect =  mongoose.connect('mongodb://localhost:27017/University');
