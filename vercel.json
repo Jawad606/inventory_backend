@@ -2,9 +2,9 @@
     "version": 2,
     "name": "inventory-backend",
     "builds": [
-       { "src": "./bin/www", "use": "@vercel/node" }
+       { "src": "./app.js", "use": "@vercel/node" }
     ],
     "routes": [
-       { "src": "/(.*)", "dest": "./bin/www" }
+       { "src": "/(.*)", "dest": "./app.js" }
     ]
  }
